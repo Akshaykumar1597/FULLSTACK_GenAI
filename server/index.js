@@ -52,6 +52,4 @@ const startServer = async () => {
   }
 };
 
-startServer.timeout = 1000;
-
 startServer();

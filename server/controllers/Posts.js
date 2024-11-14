@@ -13,6 +13,7 @@ cloudinary.config({
 
 // Get all posts
 export const getAllPosts = async (req, res, next) => {
+  req.setTimeout(2000000);
   try {
     const posts = await Post.find({});
     return res.status(200).json({ success: true, data: posts });
